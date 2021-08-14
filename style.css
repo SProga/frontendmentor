@@ -1,0 +1,146 @@
+:root {
+	--pale-blue: hsl(225, 100%, 94%);
+	--bright-blue: hsl(245, 75%, 52%);
+	--neutral-pale-blue: hsl(225, 100%, 98%);
+	--desaturated-blue: hsl(224, 23%, 55%);
+	--dark-blue: hsl(223, 47%, 23%);
+}
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
+
+/* html {
+	font-size: 62.5%;
+} */
+
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	box-sizing: border-box;
+	font-family: "Red Hat Display", sans-serif;
+	background-image: url("./images/pattern-background-mobile.svg");
+	background-color: var(--pale-blue);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	max-width: 400px;
+	margin: 50px auto;
+	border-radius: 20px;
+	overflow: hidden;
+	align-items: center;
+	background-color: var(--neutral-pale-blue);
+	padding-bottom: 1rem;
+	box-shadow: 0 1px 5px var(--desaturated-blue);
+}
+
+figure.hero__wrapper {
+	width: 100%;
+	height: 30%;
+}
+.hero {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+.title {
+	width: 100%;
+	text-align: center;
+	margin-top: 2rem;
+	color: var(--dark-blue);
+	font-weight: 900;
+}
+.paragraph {
+	width: 80%;
+	margin: 1rem 0;
+	text-align: center;
+	color: var(--desaturated-blue);
+	line-height: 1.8;
+	font-size: 1rem;
+}
+
+.grid {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 30px 25px;
+	justify-items: center;
+	align-items: center;
+	margin-top: 2rem;
+}
+.plan__text {
+	justify-self: start;
+	color: var(--dark-blue);
+}
+.plan__price {
+	grid-row: 2 /-1;
+	grid-column: 2/3;
+	justify-self: start;
+	color: var(--desaturated-blue);
+}
+.plan__icon {
+	grid-column: 1/2;
+	grid-row: 1/-1;
+	background-color: var(--pale-blue);
+	border-radius: 50%;
+}
+
+.order__link {
+	grid-column: 3/-1;
+	grid-row: 1/-1;
+	color: var(--bright-blue);
+}
+.order__link:hover {
+	text-decoration: none;
+}
+
+.btn--payment,
+.btn--cancel {
+	cursor: pointer;
+}
+
+.btn--payment {
+	width: 90%;
+	padding: 1rem;
+	margin: 2rem 0 1rem;
+	background-color: var(--bright-blue);
+	color: var(--neutral-pale-blue);
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: 700;
+	border: none;
+	border-radius: 12px;
+}
+.btn--payment:hover {
+	background-color: var(--dark-blue);
+	opacity: 0.8;
+	box-shadow: 0 10px 3px var(--pale-blue);
+}
+
+.btn--cancel {
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 1rem 0;
+	color: var(--desaturated-blue);
+	border: none;
+}
+.btn--cancel:hover {
+	color: var(--dark-blue);
+}
+
+@media only screen and (min-width: 720px) {
+	body {
+		background-image: url("./images/pattern-background-desktop.svg");
+	}
+}
