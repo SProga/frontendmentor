@@ -72,15 +72,19 @@ figure.hero__wrapper {
 
 .grid {
 	display: grid;
-	width: 100%;
+	width: 89%;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 30px 25px;
 	justify-items: center;
 	align-items: center;
 	margin-top: 2rem;
+	background-color: hsla(214, 35%, 91%, 0.411);
+	padding: 0.8rem;
+	border-radius: 20px;
 }
 .plan__text {
 	justify-self: start;
+	font-size: 1rem;
 	color: var(--dark-blue);
 }
 .plan__price {
@@ -121,6 +125,7 @@ figure.hero__wrapper {
 	font-weight: 700;
 	border: none;
 	border-radius: 12px;
+	box-shadow: 0 10px 10px var(--pale-blue);
 }
 .btn--payment:hover {
 	background-color: var(--dark-blue);
@@ -149,6 +154,5 @@ figure.hero__wrapper {
 	.grid {
 		display: flex;
 		flex-direction: column;
-		gap: 10px;
 	}
 }
