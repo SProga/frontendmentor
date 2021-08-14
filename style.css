@@ -154,5 +154,6 @@ figure.hero__wrapper {
 	.grid {
 		display: flex;
 		flex-direction: column;
+		gap: 10px;
 	}
 }
