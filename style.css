@@ -19,6 +19,10 @@
 } */
 
 body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
@@ -39,7 +43,7 @@ body {
 	border-radius: 20px;
 	overflow: hidden;
 	align-items: center;
-	background-color: var(--neutral-pale-blue);
+	background-color: hsl(216, 100%, 99%);
 	padding-bottom: 1rem;
 	box-shadow: 0 1px 5px var(--desaturated-blue);
 }
@@ -63,6 +67,7 @@ figure.hero__wrapper {
 }
 .paragraph {
 	width: 80%;
+	max-width: 320px;
 	margin: 1rem 0;
 	text-align: center;
 	color: var(--desaturated-blue);
@@ -125,12 +130,11 @@ figure.hero__wrapper {
 	font-weight: 700;
 	border: none;
 	border-radius: 12px;
-	box-shadow: 0 10px 10px var(--pale-blue);
+	box-shadow: 0 10px 14px hsl(225, 28%, 79%);
 }
 .btn--payment:hover {
 	background-color: var(--dark-blue);
 	opacity: 0.8;
-	box-shadow: 0 10px 3px var(--pale-blue);
 }
 
 .btn--cancel {
