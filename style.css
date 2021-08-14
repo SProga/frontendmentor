@@ -144,3 +144,11 @@ figure.hero__wrapper {
 		background-image: url("./images/pattern-background-desktop.svg");
 	}
 }
+
+@media only screen and (max-width: 358px) {
+	.grid {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+}
