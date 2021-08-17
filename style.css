@@ -124,7 +124,7 @@ figure.hero__wrapper {
 }
 
 .btn--payment {
-	width: 90%;
+	width: 80%;
 	padding: 1rem;
 	margin: 2rem 0 1rem;
 	background-color: var(--bright-blue);
@@ -147,7 +147,7 @@ figure.hero__wrapper {
 	margin: 1rem 0;
 	color: var(--desaturated-blue);
 	border: none;
-	background-color:transparent;
+	background-color: transparent;
 }
 .btn--cancel:hover {
 	color: var(--dark-blue);
